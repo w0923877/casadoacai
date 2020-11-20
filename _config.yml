@@ -20,7 +20,7 @@ disqus:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-og_image                 : "/images/bird.png" # Open Graph/Twitter imagem do site padrão do Twitter, opcional para seo e compartilhamento social
+og_image                 : "/images/logo.png" # Open Graph/Twitter imagem do site padrão do Twitter, opcional para seo e compartilhamento social
 
 # Social sharing
 twitter:
