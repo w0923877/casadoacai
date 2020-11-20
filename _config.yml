@@ -4,8 +4,8 @@ locale                   : "pt-br"
 title                    : "Casa do Açai"
 title_separator          : "-"
 description              : "100% Natural"
-favicon                  : "/images/bird.png"
-avatar                   : "/images/bird.png"
+favicon                  : "/images/logo.png"
+avatar                   : "/images/logo.png"
 #url                      : "http://casadoacai.u1m.com.br"
 baseurl                  : "/" # o sub-diretorio do seu site, por exemplo, "/ blog" deixe em branco se não houver subcaminho
 
