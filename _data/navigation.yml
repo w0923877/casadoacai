@@ -2,16 +2,16 @@
 main:
   - title: "home"
     url: /
-  - title: "blog"
+  - title: "beneficios"
     url: /blog
   - title: "poetry"
     url: /poetry
-  - title: "submenu"
+  - title: "produtos"
     url: /
     children: 
-      - title: "item 1"
-        url: /404
-      - title: "item 2"
-        url: /404
-  - title: "subscribe"
-    url: /feed.xml
+      - title: "Açai - Preços"
+        url: /blog/preco
+      - title: "Farinha - Tapioca"
+        url: /blog/tapioca
+  - title: "pedidos"
+    url: /grupozap/
