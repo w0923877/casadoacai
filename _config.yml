@@ -1,0 +1,116 @@
+# Site Settings
+encoding                 : "utf-8"
+locale                   : "pt-br"
+title                    : "Casa do Açai"
+title_separator          : "-"
+description              : "100% Natural"
+favicon                  : "/images/bird.png"
+avatar                   : "/images/bird.png"
+#url                      : "http://casadoacai.u1m.com.br"
+baseurl                  : "/" # o sub-diretorio do seu site, por exemplo, "/ blog" deixe em branco se não houver subcaminho
+
+# Site Author
+author:
+  name                   : "Gean Ramos" # aparece no rodapé e no feed
+
+comments                 : false # defina-o como true para ativar comentários
+disqus:
+  shortname              : geanramos # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+
+og_image                 : "/images/bird.png" # Open Graph/Twitter imagem do site padrão do Twitter, opcional para seo e compartilhamento social
+
+# Social sharing
+twitter:
+  username               : # optional, for social sharing
+
+# Analytics
+analytics:
+  google:
+    tracking_id          : # add your google tracking id here
+
+# Reading Files
+include:
+  - _pages
+# Files excluded from Jekyll builds
+exclude:
+- README.md
+- LICENSE
+- Gemfile
+- Gemfile.lock
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /blog/:title/
+paginate: 5 # amount of posts to show
+paginate_path: "/blog/page:num/"
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+collections:
+  poetry:
+    output: true
+    permalink: /:collection/:title/
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-feed
+
+
+# Front matter defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      comments: false
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # _poetry
+  - scope:
+      path: ""
+      type: poetry
+    values:
+      layout: post
+      share: false
