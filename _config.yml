@@ -110,7 +110,7 @@ defaults:
   # _poetry
   - scope:
       path: ""
-      type: poetry
+      type: beneficios
     values:
       layout: post
       share: false
